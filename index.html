@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Casey Rodriguez's Website</title>
+        <meta name="description" content="Personal profile website for information beyond Casey Rodriguez's resume.">
+        <meta name="keywords" content="Casey Rodriguez, Casey, Rodriguez, resume, personal website">
+        <meta name="author" content="Casey Rodriguez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="./assets/css/CSStuff.css">
+    </head>
+
+    <body>
+        <header>
+            <video id="coding-video" autoplay muted loop>
+                <source src="assets/img/pexels coding.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <nav id="header-nav" class="brown-bg">
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">My Current Projects</a>
+                    </li>
+                    <li>
+                        <a href="archive.html">Archive</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            <nav>
+        </header>
+
+        <div id='content'>
+            <aside class="narrow column">
+                <img id="mypfp" src="assets/img/mypfp.png" alt="A profile picture of myself.">
+                <h1 class="bolder-txt">Hello!</h1>
+                <p class="medium-txt">I am Casey Rodriguez <a class="normal-txt" href="https://www.mypronouns.org/they-them">(They/Them)</a>, a Carnegie Mellon University (CMU) Senior studying Decision Science, Human-Computer Interaction, and Physics. If you're reading this, congratulations! You've found my webzone! While I'm fresh out of prizes to award, feel free to explore and learn a bit about me, if you please.</p>
+            </aside>
+
+            <main class="wide column">
+                <h2>Project Posts</h2>
+
+                <p class="light-txt">Here you can find some info on projects I am or have been working on.</p>
+                <h4 class="project-title"><a class="project-link" href="projects.html#prism-website">PRISM Website</a></h4><p class="light-txt">Posted: 2020.9.23 at 23:54</p>
+                <p>Since August of 2019 I have been working on a website for CMU's LGBTQ+ organization, PRISM. A bit of advice for those out there planning on doing the same: <em>don't</em> do that without at least <em>some</em> prior experience. Having to learn decent HTML, CSS, JS, Apache, and Django (python) is too much to handle at once. Despite this, I am rather happy with the progress I am making. Has this taken me more than a year? Yes. Am I upset it took so long to understand how to integrate all of these tools together into one website? Also yes. A fun and engaging challenge nonetheless.</p>
+                
+                <h4 class="project-title"><a class="project-link" href="archive.html#prism-door-sensor">PRISM Door Sensor</a></h4><p class="light-txt">Posted: 2020.7.10 at 14:23</p>
+                <p>While I never managed to get much use out of it myself (due to the sudden lockdown), PRISM wanted a system to let people check if the door to the physical club room was open. This would provide people with a safe space to kick back and relax in a supportive environment. Truth be told, a system like this was in use around my first year at CMU. However, the Raspberry Pi that was opperating the senor broke when the door accidentally slammed into it. Whoops! The club officers asked me, the current webmaster for the org, to find a way to fix it. While reparing a shattered motherboard is a <em>bit</em> beyond my capabilities, I was at least able to reccomend a new Raspberry Pi system to use in the old one's place.</p>
+                <p>We ended up purchasing a Raspberry Pi 3B+. A bit overkill for a simple door sensor, but I was able to get in on a sale. Score! The door sensor mechanism itself is rather simple. Using a set of magnets, we can hook one to the door and another to the Raspberry Pi. When the door's magnet swings past the Raspberry Pi's we can detect the voltage difference from the <a href="https://en.wikipedia.org/wiki/Hall_effect">Hall effect</a>. Changing the door status online is as simple as sending a POST with a small bit of data attached to our old webserver.</p>
+            </main>
+        </div>
+
+        <footer>
+            <div class="content">
+                <p>
+                    I'm a little camera shy! To cover in my stead, I've recruited my family pets to help me out. I present to you Louie (Left) and Koda (Right).
+                </p>
+                <img class="dog-photo" src="assets/img/louie.jpg" alt="Picture of my family pet dog, Louie">
+                <img class="dog-photo" src="assets/img/dogs.jpg" alt="Picture of my family pet dogs, Louie and Koda">
+                <img class="dog-photo" src="assets/img/koda.jpg" alt="Picture of my family pet dogs, Koda">
+            </div>
+        </footer>
+    </body>
+</html>
