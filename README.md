@@ -1,2 +1,2 @@
 # Xenosplitter.github.io
-A personal website, hosting my portfolio
+A personal website, built for a school project
